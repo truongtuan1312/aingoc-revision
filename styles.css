@@ -2,6 +2,7 @@
 
 :root {
   color-scheme: light;
+  font-size: 100%;
   --paper: #f5f7f3;
   --white: #fff;
   --ink: #172e2b;
@@ -20,8 +21,9 @@
 * { box-sizing: border-box; }
 
 body {
+  zoom: 1.25;
   margin: 0;
-  min-width: 320px;
+  min-width: 244px;
   min-height: 100vh;
   color: var(--ink);
   background:
@@ -160,7 +162,8 @@ select { max-width: 440px; border: 0; color: var(--ink); background: transparent
   .page-heading { margin: 0 1px 23px; }
   .heading-sticker { width: 58px; height: 58px; margin: 5px 2px 0 8px; }
   .quiz-toolbar { align-items: flex-start; flex-direction: column; padding: 14px; }
-  select { max-width: calc(100vw - 65px); }
+  .select-wrap { width: 100%; }
+  select { max-width: 100%; }
   .toggle-control { width: 100%; justify-content: space-between; padding-top: 11px; border-top: 1px solid #edf0ec; }
   .quiz-card-top { padding: 20px 19px 15px; }
   .progress-track { margin: 0 19px; }
